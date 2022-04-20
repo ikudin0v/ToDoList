@@ -1,0 +1,86 @@
+body {
+    background-color: #bbbbbb;
+    margin: 0;
+    font-size: 35px;
+}
+.main {
+    background-color: #bbbbbb;
+    width: 800px;
+    height: 100vh;
+    margin: 10px auto;
+}
+.header, .currentTasks{
+    background-color: #e7e7e7;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.headerText {
+    font-size: 3rem;
+    padding: 15px 15px 0px 15px;
+    text-align: center;
+}
+.headerNav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.addItem {
+    width: 85%;
+    margin: auto 0;
+}
+.addText {
+    width: 100%;
+    font-size: 2rem;
+    border: none;
+    /* border-bottom: #bbbbbb solid 2px; */
+    border: #bbbbbb solid 2px;
+    background-color: #bbbbbb;
+    border-radius: 5px;
+    
+
+}
+.addButton {
+    width: 7%;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addButton img {
+    width: 100%;
+}
+.currentHeaderText {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.taskBox {
+    display: grid;
+    /* grid-template-columns: 1fr 10fr 1fr 1fr; */
+    /* grid-auto-columns: auto; */
+    /* grid-template-columns: 1fr repeat(3, minmax(0,1fr)) */
+    grid-template-columns: 1fr minmax(0,10fr) 1fr 1fr;
+    gap: 10px;
+}
+
+.task {
+    display: block;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.task img {
+    display: block;
+    width: 1.2em;
+    /* align-self: center; */
+    margin: auto;
+}
+.checkBox {
+    display: block;
+    width: 1em;
+    height: 1em;
+}
