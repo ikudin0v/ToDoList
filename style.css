@@ -1,16 +1,17 @@
 body {
-    background-color: #bbbbbb;
+    background-color: #085f63;
     margin: 0;
     font-size: 35px;
+    color: #494949;
 }
 .main {
-    background-color: #bbbbbb;
+    background-color: #085f63;
     width: 800px;
     height: 100vh;
     margin: 10px auto;
 }
-.header, .currentTasks{
-    background-color: #e7e7e7;
+.header, .currentTasks, .completedTasks{
+    background-color: #49beb7;
     border-radius: 15px;
     margin-bottom: 10px;
 }
@@ -31,27 +32,32 @@ body {
     margin: auto 0;
 }
 .addText {
-    width: 100%;
+    width: calc(100% - 20px);
     font-size: 2rem;
     border: none;
-    /* border-bottom: #bbbbbb solid 2px; */
-    border: #bbbbbb solid 2px;
-    background-color: #bbbbbb;
+    /* border-bottom: #085f63 solid 2px; */
+    background-color: #085f63;
     border-radius: 5px;
-    
-
+    color:#facf5a;
+    padding: 5px 10px;
 }
 .addButton {
     width: 7%;
-    background-color: #e7e7e7;
+    background-color: #49beb7;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .addButton img {
     width: 100%;
+    border: 2px solid #facf5a;
+    border-radius: 5px;
+    background-color: #ffdf89;
 }
-.currentHeaderText {
+.addButton img:hover {
+     background-color: #facf5a;
+}
+.currentHeaderText, .completedHeaderText{
     font-size: 2rem;
     padding: 10px;
     text-align: center;
@@ -59,16 +65,13 @@ body {
 
 .taskBox {
     display: grid;
-    /* grid-template-columns: 1fr 10fr 1fr 1fr; */
-    /* grid-auto-columns: auto; */
-    /* grid-template-columns: 1fr repeat(3, minmax(0,1fr)) */
     grid-template-columns: 1fr minmax(0,10fr) 1fr 1fr;
-    gap: 10px;
+    gap: 5px;
+    padding: 5px 10px;
 }
 
 .task {
     display: block;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -76,11 +79,41 @@ body {
 .task img {
     display: block;
     width: 1.2em;
-    /* align-self: center; */
     margin: auto;
 }
 .checkBox {
     display: block;
     width: 1em;
     height: 1em;
+}
+
+.completedTaskBox {
+    display: grid;
+    grid-template-columns: 0fr minmax(0,12fr) 0fr 1fr;
+    gap: 5px;
+    padding: 5px 10px;
+}
+.delTaskBtn {
+    border: 2px solid #ff5959;
+    border-radius: 5px;
+    background-color: #ff8080;
+}
+.editTaskBtn {
+    border: 2px solid #facf5a;
+    background-color: #ffdf89;
+    border-radius: 5px;
+}
+.doneTaskBtn {
+    border: 2px solid #5afab7;
+    background-color: #97ffd4;
+    border-radius: 5px;
+}
+.delTaskBtn :hover{
+    background-color: #ff5959;
+}
+.editTaskBtn:hover{
+    background-color: #facf5a;
+}
+.doneTaskBtn :hover{
+    background-color: #5afab7;
 }
