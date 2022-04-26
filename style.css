@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
     background-color: #085f63;
     margin: 0;
     font-size: 35px;
     color: #494949;
+    font-family: 'Roboto', sans-serif;
 }
 .main {
     background-color: #085f63;
@@ -108,12 +110,12 @@ body {
     background-color: #97ffd4;
     border-radius: 5px;
 }
-.delTaskBtn :hover{
+.delTaskBtn:hover{
     background-color: #ff5959;
 }
 .editTaskBtn:hover{
     background-color: #facf5a;
 }
-.doneTaskBtn :hover{
+.doneTaskBtn:hover{
     background-color: #5afab7;
 }
